@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/form_aula4/aula4.css">
+</head>
+
+<body>
+    <form action="/form_aula4/autenticacao.php" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="email">E-mail:</label>
+                <br>
+                <input type="email" name="email" id="email" size="30" placeholder="Digite aqui..." value="" required>
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <br>
+                <input type="password" name="senha" id="senha" placeholder="Digite aqui..." size="30" required>
+            </p>
+            <p>
+                <label id="lembra">
+                    <input type="checkbox" name="lembrarme" id="lembrarme">
+                    Lembrar-me
+                </label>
+            </p>
+            <p id="btn">
+                <button type="submit">Entrar</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

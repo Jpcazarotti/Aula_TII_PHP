@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1ªAtividade</title>
+    <link rel="stylesheet" href="/atividades_07.08/atividade1/atividade1.css" />
+  </head>
+  <body>
+    <form action="/atividades_07.08/atividade1/atividade1.php" method="post">
+      <fieldset>
+        <legend>Dados</legend>
+        <p>
+          <label for="firstName">Primeiro Nome:</label>
+          <br />
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Digite Aqui..."            
+            required
+          />
+        </p>
+        <p>
+          <label for="secondName">Segundo Nome:</label>
+          <br />
+          <input
+            type="text"
+            name="secondName"
+            id="secondName"
+            placeholder="Digite Aqui..."            
+            required
+          />
+        </p>
+        <p>
+          <label for="idade">Idade:</label>
+          <br />
+          <input
+            type="number"
+            name="idade"
+            id="idade"
+            placeholder="Ex.:20"                       
+            required
+          />
+        </p>
+        <p>
+          <label for="city">Cidade Natal:</label>
+          <br />
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Digite Aqui..."            
+            required
+          />
+        </p>
+        <p id="btn">
+            <button type="submit">Entrar</button>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

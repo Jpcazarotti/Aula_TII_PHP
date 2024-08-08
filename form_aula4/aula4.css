@@ -1,0 +1,56 @@
+body {
+    background-color: #e3f2fd;
+    font-family: cursive;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+fieldset {
+    border: 2px solid thistle;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#email, #senha{
+    background-color: ghostwhite;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+#lembra {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-top: -37px;
+}
+
+button {
+    background-color: lightsalmon;
+    color: black;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 80px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: 500;
+}
