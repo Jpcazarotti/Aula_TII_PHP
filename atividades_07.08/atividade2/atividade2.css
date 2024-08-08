@@ -10,7 +10,9 @@ form {
     height: 95vh;
 }
 
-fieldset {
+fieldset { 
+    display: flex;
+    justify-content: space-around;   
     border: 2px solid thistle;
     border-radius: 8px;
     box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
@@ -23,17 +25,12 @@ legend {
     text-align: center;
 }
 
-#firstName, #secondName, #idade, #city{
+#idade{
     background-color: ghostwhite;
     border: 1px solid rgb(0, 0, 0, 0.5);
     box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
     border-radius: 7px;
-    width: 200px;
-}
-
-#btn {
-    display: flex;
-    justify-content: flex-end;
+    width: 70px;
 }
 
 button {

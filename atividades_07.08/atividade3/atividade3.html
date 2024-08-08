@@ -3,61 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1ªAtividade</title>
-    <link rel="stylesheet" href="/atividades_07.08/atividade1.css" />
+    <title>3ªAtividade</title>
+    <link rel="stylesheet" href="/atividades_07.08/atividade3/atividade3.css" />
   </head>
   <body>
-    <form action="atividade1.php" method="post">
+    <form action="/atividades_07.08/atividade3/atividade3.php" method="get">
       <fieldset>
-        <legend>Dados</legend>
-        <p>
-          <label for="firstName">Primeiro Nome:</label>
-          <br />
-          <input
-            type="text"
-            name="firstName"
-            id="firstName"
-            placeholder="Digite Aqui..."            
-            required
-          />
-        </p>
-        <p>
-          <label for="secondName">Segundo Nome:</label>
-          <br />
-          <input
-            type="text"
-            name="secondName"
-            id="secondName"
-            placeholder="Digite Aqui..."            
-            required
-          />
-        </p>
-        <p>
-          <label for="idade">Idade:</label>
-          <br />
+        <legend>Digite a tabuada que deseja à baixo!</legend>
+        <p>          
           <input
             type="number"
-            name="idade"
-            id="idade"
-            placeholder="Ex.:20"                       
+            name="tabuada"
+            id="tabuada"
+            placeholder="Ex.:5"                       
             required
           />
-        </p>
-        <p>
-          <label for="city">Cidade Natal:</label>
-          <br />
-          <input
-            type="text"
-            name="city"
-            id="city"
-            placeholder="Digite Aqui..."            
-            required
-          />
-        </p>
+        </p>        
         <p id="btn">
-            <button type="submit">Entrar</button>
+            <button type="submit">Calcular</button>
         </p>
+        <div id="showTabuada"></div>
       </fieldset>
     </form>
   </body>
-</html>
+</html>   
