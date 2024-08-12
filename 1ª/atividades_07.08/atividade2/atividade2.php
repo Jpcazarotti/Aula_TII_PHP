@@ -1,7 +1,7 @@
 <?php
-$img1 = '<img src="/atividades_07.08/atividade2/img/download 1.png" alt="Imagem Criança/Adoslecente">';
-$img2 = '<img src="/atividades_07.08/atividade2/img/adulto.png" alt="Imagem Adulto">';
-$img3 = '<img src="/atividades_07.08/atividade2/img/idoso.png" alt="Imagem Idoso">';
+$img1 = '<img src="/1ª/atividades_07.08/atividade2/img/download 1.png" alt="Imagem Criança/Adoslecente">';
+$img2 = '<img src="/1ª/atividades_07.08/atividade2/img/adulto.png" alt="Imagem Adulto">';
+$img3 = '<img src="/1ª/atividades_07.08/atividade2/img/idoso.png" alt="Imagem Idoso">';
 
 $idade = $_GET['idade'];
 
