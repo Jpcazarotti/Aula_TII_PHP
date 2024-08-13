@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2ª Função</title>
+    <link rel="stylesheet" href="/atividades_12.08/atividade2/function_two.css" />
+  </head>
+  <body>
+    <form action="/atividades_12.08/atividade2/function_two.php" method="post">
+      <fieldset>
+        <legend>Dados</legend>
+        <p>
+          <label for="name">Nome:</label>
+          <div>
+          <input type="text" name="name" id="name" placeholder="Ex.: Luis Pereira" required>
+        </div>
+        </p>
+        <p>
+          <label for="sf">Salário Fixo:</label>
+          <div id="rs">
+            <span>R$</span>
+            <input type="number" name="sf" id="sf" placeholder="1600" required>
+          </div>
+        </p>
+        <p>
+          <label for="tv">Total Vendas:</label>
+          <div id="rs">
+            <span>R$</span>
+            <input type="number" name="tv" id="tv" placeholder="10000" required>
+          </div>
+        </p>         
+        <br> 
+        <div id="btn">
+          <button type="submit">Calcular</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+body {
+  background-color: #e3f2fd;
+  font-family: cursive;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+fieldset {
+  border: 2px solid thistle;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+#num {
+  background-color: ghostwhite;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
+  border-radius: 7px;
+  width: 80px;
+}
+
+#btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightsalmon;
+  color: black;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 80px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: cursive;
+}
