@@ -23,7 +23,7 @@ legend {
   text-align: center;
 }
 
-#rs {
+.rs {
   position: relative;
   display: inline-block;
 }

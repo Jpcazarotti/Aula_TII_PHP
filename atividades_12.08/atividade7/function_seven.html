@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1ªFunção</title>
-    <link rel="stylesheet" href="/atividade1/function_one.css" />
+    <link rel="stylesheet" href="/atividades_12.08/atividade7/function_seven.css" />
   </head>
   <body>
-    <form action="/atividade1/function_one.php" method="post">
+    <form action="/atividades_12.08/atividade7/function_seven.php" method="get">
       <fieldset>
-        
+        <legend>Informações à Baixo</legend>
+        <p>
+          <label for="pc">Preço de Custo:</label>
+          <div class="rs">
+            <span id="spanOne">R$</span>
+            <input type="text" name="pc" id="pc" placeholder="50" required>
+          </div>
+        </p>
+        <p>
+          <label for="pa">Percentual de Acréscimo:</label>
+          <div class="rs">            
+            <input type="text" name="pa" id="pa" placeholder="10" required>
+            <span id="spanTwo">%</span>
+          </div>
+        </p>
+        <div id="btn">
+          <button type="submit">Efetuar</button>
+        </div>
       </fieldset>
     </form>
   </body>

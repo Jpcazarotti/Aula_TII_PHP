@@ -4,12 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>6 ªFunção</title>
-    <link rel="stylesheet" href="/atividades_12.08/atividade6/function_six.css" />
+    <link
+      rel="stylesheet"
+      href="/atividades_12.08/atividade6/function_six.css"
+    />
   </head>
   <body>
-    <form action="/atividades_12.08/atividade6/function_six.php" method="post">
+    <form action="/atividades_12.08/atividade6/function_six.php" method="get">
       <fieldset>
-        <legend></legend>
+        <legend>Dados à Baixo</legend>
+        <p>
+          <label for="altura">Altura</label>          
+          <div class="rs">          
+          <input
+            type="text"
+            name="altura"
+            id="altura"
+            placeholder="1.75"
+            required
+          />
+          <span>m</span>  
+        </div>        
+        </p>
+        <p>
+          <label for="kg">Peso</label>          
+          <div class="rs">
+          <input type="text" name="kg" id="kg" placeholder="70" required />
+          <span>kg</span>
+        </div>
+        </p>
+        <div id="btn">
+          <button type="submit">Efetuar</button>
+        </div>
       </fieldset>
     </form>
   </body>
