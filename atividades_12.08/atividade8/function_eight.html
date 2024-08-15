@@ -3,13 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1ªFunção</title>
-    <link rel="stylesheet" href="/atividade1/function_one.css" />
+    <title>8 ªFunção</title>
+    <link rel="stylesheet" href="/atividades_12.08/atividade8/function_eight.css" />
   </head>
   <body>
-    <form action="/atividade1/function_one.php" method="post">
+    <form action="/atividades_12.08/atividade8/function_eight.php" method="get">
       <fieldset>
-        
+        <legend>Informações à Baixo</legend>
+        <p>
+          <label for="cf">Custo de Fábrica</label>
+          <div class="rs">
+            <span id="spanOne">R$</span>
+            <input type="text" name="cf" id="cf" placeholder="40000" required>
+          </div>
+        </p>
+        <p>
+          <label for="i">Impostos:</label>
+          <div class="rs">            
+            <input type="text" name="i" id="i" placeholder="20" required>
+            <span class="spanTwo">%</span>
+          </div>
+        </p>
+        <p>
+          <label for="pd">Percentual do Distribuidor:</label>
+          <div class="rs">            
+            <input type="text" name="pd" id="pd" placeholder="10" required>
+            <span class="spanTwo">%</span>
+          </div>
+        </p>
+        <div id="btn">
+          <button type="submit">Efetuar</button>
+        </div>
       </fieldset>
     </form>
   </body>
