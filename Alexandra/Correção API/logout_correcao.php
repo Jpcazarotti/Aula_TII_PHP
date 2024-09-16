@@ -8,6 +8,6 @@ session_destroy();
 // Remove o cookie
 setcookie('user', '', time() - 3600, '/');
 
-header('Location: login.php');
+// Redireciona para a página de login
+header('Location: login_correcao.php');
 exit();
-?>

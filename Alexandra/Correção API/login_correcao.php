@@ -7,7 +7,7 @@ $correct_password = 'password123';
 
 // Verifica se o usuário já está logado
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
-    header('Location: dashboard.php');
+    header('Location: dashboard_correcao.php');
     exit();
 }
 
@@ -16,15 +16,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
     
-    // Verifica as credenciais
+    // Verifica as credenciais (use hash em produção)
     if ($username === $correct_username && $password === $correct_password) {
+        // Regenera a sessão após login
+        session_regenerate_id(true);
+        
         // Cria uma sessão para o usuário
         $_SESSION['loggedin'] = true;
+        $_SESSION['username'] = $username; // Armazena o nome de usuário na sessão
         
         // Define um cookie de sessão com flags de segurança
-        setcookie('user', $username, time() + 3600, "/", "", true, true);
+        setcookie('user', $username, time() + 3600, "/", "", isset($_SERVER['HTTPS']), true);
         
-        header('Location: dashboard.php');
+        header('Location: dashboard_correcao.php');
         exit();
     } else {
         echo 'Usuário ou senha incorretos!';
@@ -32,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<form method="post" action="">
+<form method="post" action="#">
     <label for="username">Usuário:</label>
     <input type="text" name="username" id="username" required>
     <br>
