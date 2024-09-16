@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: dashboard.php');
         exit();
     } else {
-        echo 'Credenciais inválidas!';
+        echo 'Usuário ou senha incorretos!';
     }
 }
 ?>
